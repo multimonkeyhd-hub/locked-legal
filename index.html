@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Start – LOCKED</title>
+<style>
+/* Bewusst eine einzige, kleine Datei: die Seiten muessen jahrelang ohne
+   Wartung erreichbar bleiben. Keine Schriften, keine Skripte, kein CDN. */
+:root {
+  --text: #0f0f14;
+  --muted: #5b5b66;
+  --accent: #5b34e5;
+  --border: #e5e5ea;
+  --bg: #ffffff;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --text: #f2f2f7; --muted: #a1a1aa; --border: #2c2c2e; --bg: #0f0f14; }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0 auto; padding: 40px 24px 96px; max-width: 720px;
+  background: var(--bg); color: var(--text);
+  font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+header { padding-bottom: 24px; margin-bottom: 32px; border-bottom: 1px solid var(--border); }
+.wordmark { font-weight: 700; letter-spacing: 2px; text-decoration: none; color: var(--text); }
+nav { margin-top: 12px; font-size: 15px; }
+nav a { color: var(--muted); text-decoration: none; margin-right: 16px; }
+nav a:hover, nav a[aria-current] { color: var(--accent); }
+h1 { font-size: 30px; line-height: 1.2; margin: 0 0 8px; letter-spacing: -0.5px; }
+h2 { font-size: 20px; margin: 40px 0 12px; letter-spacing: -0.2px; }
+p, li { color: var(--text); }
+ul { padding-left: 22px; }
+li { margin-bottom: 6px; }
+.stand { color: var(--muted); font-size: 15px; margin: 0 0 32px; }
+.platzhalter {
+  background: #fff3cd; color: #664d03; border: 1px solid #ffe69c;
+  border-radius: 8px; padding: 12px 16px; font-size: 15px;
+}
+@media (prefers-color-scheme: dark) {
+  .platzhalter { background: #2a2410; color: #f0d68a; border-color: #4a3f18; }
+}
+table { border-collapse: collapse; width: 100%; margin: 16px 0; font-size: 15px; }
+th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--border); vertical-align: top; }
+th { font-weight: 600; }
+footer { margin-top: 64px; padding-top: 24px; border-top: 1px solid var(--border); color: var(--muted); font-size: 15px; }
+a { color: var(--accent); }
+</style>
+</head>
+<body>
+<header>
+  <a class="wordmark" href="index.html">LOCKED</a>
+  <nav>
+    <a href="datenschutz.html">Datenschutz</a>
+    <a href="nutzungsbedingungen.html">Nutzungsbedingungen</a>
+    <a href="support.html">Support</a>
+    <a href="impressum.html">Impressum</a>
+  </nav>
+</header>
+<h1>LOCKED</h1>
+<p class="stand">Hör auf, dich auf Disziplin zu verlassen.</p>
+
+<p>LOCKED ist eine iOS-App, mit der du dich zu einer Sache verpflichtest und ein
+Freund dich dabei begleitet. Ihr seht den Fortschritt des jeweils anderen. Es gibt
+keinen Gewinner, keine Punkte und keinen öffentlichen Feed.</p>
+
+<h2>Rechtliches</h2>
+<ul>
+  <li><a href="datenschutz.html">Datenschutzerklärung</a></li>
+  <li><a href="nutzungsbedingungen.html">Nutzungsbedingungen</a></li>
+  <li><a href="support.html">Support und Kontakt</a></li>
+  <li><a href="impressum.html">Impressum</a></li>
+</ul>
+<footer>
+  LOCKED · <a href="mailto:fh.appstudio@gmail.com">fh.appstudio@gmail.com</a>
+</footer>
+</body>
+</html>
